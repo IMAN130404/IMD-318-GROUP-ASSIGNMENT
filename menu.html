@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu - Ayam Gepuk AG</title>
+  <link rel="stylesheet" href="css_style.css">
+  <link rel="icon" type="image/jpeg" href="picture/logo.jpeg">
+  <style>
+    /* Reset & Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212;
+      color: #f8f8f8;
+      line-height: 1.6;
+      padding-bottom: 60px;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1, h2 {
+      color: #d4af37;
+      text-align: center;
+      margin: 30px 0 20px;
+    }
+
+    /* Header */
+    header {
+      background-color: #1e1e1e;
+      padding: 20px 0;
+      border-bottom: 2px solid #d4af37;
+    }
+
+    .logo-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 60px;
+      border-radius: 50%;
+    }
+
+    /* Nav */
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 20px auto 40px;
+    }
+
+    .nav-btn {
+      background-color: goldenrod ;
+      color: black;
+      border: 1px solid black;
+      padding: 10px 20px;
+      font-size: 14px;
+      text-transform: uppercase;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: #d4af37;
+      color: #121212;
+    }
+
+    .menu-image {
+      display: block;
+      margin: 0 auto;
+      width: 280px;
+      border-radius: 10px;
+      border: 2px solid #d4af37;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+    }
+
+    .menu-section {
+      max-width: 800px;
+      margin: 30px auto;
+      background-color: #1c1c1c;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #2a2a2a;
+      color: #d4af37;
+    }
+
+    tr:nth-child(even) {
+      background-color: #222;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+      margin-top: 10px;
+    }
+
+    li {
+      padding: 8px 0;
+      border-bottom: 1px solid #333;
+    }
+
+    strong {
+      color: #d4af37;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #1e1e1e;
+      border-top: 2px solid #d4af37;
+      color: #999;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="picture/logo.jpeg" alt="Ayam Gempuk Logo" class="logo" />
+      <h1>Ayam Gepuk AG</h1>
+    </div>
+  </header>
+
+  <section class="info-bar">
+    <div class="open-time">
+      <strong>Open:</strong> Monday - Sunday, 11:00 AM - 10:00 PM
+    </div>
+    <div class="social-media">
+      <a href="https://www.facebook.com/ayamgepukpakgembuskelantan/" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/ayamgepukaghq/" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@ayamgepukaghq" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <section class="nav-buttons">
+    <a href="group.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="menu.html" class="nav-btn">Menu</a>
+    <a href="contact.html" class="nav-btn">Contact</a>
+    <a href="gallery.html" class="nav-btn">Gallery</a>
+    <a href="review.html" class="nav-btn">Review</a>
+  </section>
+
+  <img src="picture/ayam.jpeg" alt="Menu AG" class="menu-image">
+
+  <div class="menu-section">
+    <h2>Set Ayam Bumbu / Ayam Crispy</h2>
+    <table>
+      <tr><th>Set</th><th>Isi</th><th>Harga</th></tr>
+      <tr><td>A</td><td>Nasi, Ayam Bumbu, Tauhu, Tempe, Timun & Kubis</td><td>RM 12.90</td></tr>
+      <tr><td>B</td><td>+ Kubis Goreng</td><td>RM 13.90</td></tr>
+      <tr><td>C</td><td>+ Telur & Kubis Goreng</td><td>RM 14.90</td></tr>
+    </table>
+  </div>
+
+  <img src="picture/keli.jpg" alt="Menu AG" class="menu-image">
+
+  <div class="menu-section">
+    <h2>Set Keli</h2>
+    <table>
+      <tr><th>Set</th><th>Isi</th><th>Harga</th></tr>
+      <tr><td>A</td><td>Nasi, Ikan Keli, Timun & Kubis</td><td>RM 12.90</td></tr>
+      <tr><td>B</td><td>+ Tauhu, Tempe</td><td>RM 13.90</td></tr>
+      <tr><td>C</td><td>+ Kubis Goreng</td><td>RM 14.90</td></tr>
+    </table>
+  </div>
+
+    <img src="picture/talapia.jpg" alt="Menu AG" class="menu-image">
+
+  <div class="menu-section">
+    <h2>Set 2 & 4 Orang</h2>
+    <ul>
+      <li><strong>2 Set Ayam:</strong> RM 25.80</li>
+      <li><strong>2 Set Talapia:</strong> RM 29.80</li>
+      <li><strong>4 Set Ayam:</strong> RM 51.50</li>
+      <li><strong>4 Set Talapia:</strong> RM 59.50</li>
+    </ul>
+  </div>
+
+   <img src="picture/crispy.jpg" alt="Menu AG" class="menu-image">
+
+  <div class="menu-section">
+    <h2>Special Menu</h2>
+    <ul>
+      <li><strong>Ayam Bumbu Seekor:</strong> RM 29.90</li>
+      <li><strong>Ayam Crispy Seekor:</strong> RM 30.90</li>
+    </ul>
+  </div>
+
+  <img src="picture/tea.jpg" alt="Menu AG" class="menu-image">
+
+  <div class="menu-section">
+    <h2>Minuman</h2>
+    <ul>
+      <li>Ice Tea AG - RM 3.00</li>
+      <li>Sirap / Green Apple / Anggur - RM 3.00</li>
+      <li>Blue Lemon - RM 3.50</li>
+      <li>Mineral - RM 2.00</li>
+      <li>Honeydew / Green Tea - RM 4.00</li>
+      <li>Thai Tea - RM 4.00</li>
+    </ul>
+  </div>
+
+  <img src="picture/add.jpeg" alt="Menu AG" class="menu-image">
+
+  <div class="menu-section">
+    <h2>Add On</h2>
+    <ul>
+      <li>Ayam AG / Keli - RM 7.50</li>
+      <li>Talapia - RM 8.00</li>
+      <li>Telur - RM 2.00</li>
+      <li>Tempe / Tauhu - RM 2.00</li>
+      <li>Nasi - RM 2.00</li>
+      <li>Kubis Goreng / Timun - RM 2.00</li>
+      <li>Sambal - RM 2.00</li>
+      <li>Kicap / Kacang Bumbu - RM 2.00</li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 NAJIHAH. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

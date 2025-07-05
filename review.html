@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review - Ayam Gempuk AG</title>
+  <link rel="stylesheet" href="css_style.css">
+  <link rel="icon" type="picture/logo.jpeg" href="picture/logo.jpeg">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ccc;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    header img.logo {
+      width: 80px;
+      height: auto;
+    }
+
+    h1 {
+      color: #d4af37;
+    }
+
+    .info-bar {
+      text-align: center;
+      padding: 10px;
+      background-color: #1a1a1a;
+      font-size: 14px;
+    }
+
+    .info-bar a {
+      color: #d4af37;
+      text-decoration: none;
+      margin: 0 5px;
+    }
+
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px auto;
+    }
+
+    .nav-btn {
+      background-color: goldenrod;
+      color: black;
+      border: 1px solid #d4af37;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+      background-color: #d4af37;
+      color: #121212;
+    }
+
+    .review-section {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .review-section h2 {
+      text-align: center;
+      color: #d4af37;
+      margin-bottom: 20px;
+    }
+
+    .review {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border: 1px solid #333;
+      margin-bottom: 20px;
+    }
+
+    .review strong {
+      color: #d4af37;
+    }
+
+    .review-form {
+      background-color: #1e1e1e;
+      padding: 20px;
+      border: 1px solid #444;
+    }
+
+    .review-form label {
+      display: block;
+      margin-top: 10px;
+      color: #ccc;
+    }
+
+    .review-form input,
+    .review-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background-color: #121212;
+      border: 1px solid #333;
+      color: #fff;
+    }
+
+    .review-form button {
+      margin-top: 15px;
+      padding: 12px 24px;
+      background-color: transparent;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.3s;
+    }
+
+    .review-form button:hover {
+      background-color: #d4af37;
+      color: #121212;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #1a1a1a;
+      color: #888;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="picture/logo.jpeg" alt="Ayam Gempuk Logo" class="logo" />
+    <h1>Ayam Gepuk AG</h1>
+  </header>
+
+  <section class="info-bar">
+    <div><strong>Open:</strong> Monday - Sunday, 10:00 AM - 10:00 PM</div>
+    <div class="social-media">
+      <a href="https://www.facebook.com/ayamgepukpakgembuskelantan/" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/ayamgepukaghq/" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@ayamgepukaghq" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <section class="nav-buttons">
+    <a href="group.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="menu.html" class="nav-btn">Menu</a>
+    <a href="contact.html" class="nav-btn">Contact</a>
+    <a href="gallery.html" class="nav-btn">Gallery</a>
+    <a href="review.html" class="nav-btn">Review</a>
+  </section>
+
+  <section class="review-section">
+    <h2>Customer Reviews</h2>
+
+    <div class="review">
+      <strong>Amira Othman:</strong>
+      <p>Ayam dia rangup dan sedap sangat! Portion pun besar. Recommended!</p>
+    </div>
+    <div class="review">
+      <strong>Faizal Tahir:</strong>
+      <p>Service cepat, tempat bersih, ayam gempuk memang terbaik!</p>
+    </div>
+    <div class="review">
+      <strong>Mira Filzah:</strong>
+      <p>Saya suka rempah dia, rasa unik dan pedas yang cukup. 5 bintang!</p>
+    </div>
+    <div class="review">
+      <strong>Amsyar Comel:</strong>
+      <p>Order online sampai cepat, ayam masih panas dan juicy. Terbaik AG!</p>
+    </div>
+
+    <div id="new-reviews"></div>
+
+    <div class="review-form">
+      <h3 style="color: #d4af37;">Leave a Review</h3>
+      <form id="reviewForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your name" required>
+
+        <label for="message">Your Review:</label>
+        <textarea id="message" rows="4" placeholder="Write your review here..." required></textarea>
+
+        <button type="submit">Submit Review</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 DANIAL. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById("reviewForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if (name && message) {
+        const newReview = document.createElement("div");
+        newReview.className = "review";
+
+        const reviewName = document.createElement("strong");
+        reviewName.textContent = name + ":";
+
+        const reviewText = document.createElement("p");
+        reviewText.textContent = message;
+
+        newReview.appendChild(reviewName);
+        newReview.appendChild(reviewText);
+
+        document.getElementById("new-reviews").appendChild(newReview);
+
+        document.getElementById("reviewForm").reset();
+      }
+    });
+  </script>
+
+</body>
+</html>

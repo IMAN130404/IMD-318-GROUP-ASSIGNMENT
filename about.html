@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About - Ayam Gempuk AG</title>
+  <link rel="stylesheet" href="css_style.css">
+  <link rel="icon" type="picture/logo.jpeg" href="picture/logo.jpeg">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .accordion-section {
+      text-align: center;
+      margin: 40px auto;
+      max-width: 800px;
+    }
+
+    .accordion-btn {
+      background-color: transparent;
+      border: 1px solid #d4af37;
+      color: #d4af37;
+      padding: 12px 24px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: 0.3s;
+      letter-spacing: 1px;
+    }
+
+    .accordion-btn:hover {
+      background-color: #d4af37;
+      color: #121212;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 20px;
+      background-color: #1e1e1e;
+      color: #ccc;
+      margin-top: 10px;
+      border: 1px solid #333;
+    }
+
+    .accordion-content ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .accordion-content li {
+      margin: 8px 0;
+    }
+
+    /* Navigation Buttons */
+    .nav-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    .nav-btn {
+      background-color: goldenrod;
+      color: black;
+      border: 1px solid #d4af37;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-btn:hover {
+      background-color: #d4af37;
+      color: #121212;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <img src="picture/logo.jpeg" alt="Ayam Gempuk Logo" class="logo" />
+      <h1>Ayam Gepuk AG</h1>
+    </div>
+  </header>
+
+  <section class="info-bar">
+    <div class="open-time">
+      <strong>Open:</strong> Monday - Sunday, 10:00 AM - 10:00 PM
+    </div>
+    <div class="social-media">
+      <a href="https://www.facebook.com/ayamgepukpakgembuskelantan/" target="_blank">Facebook</a> |
+      <a href="https://www.instagram.com/ayamgepukaghq/" target="_blank">Instagram</a> |
+      <a href="https://www.tiktok.com/@ayamgepukaghq" target="_blank">TikTok</a>
+    </div>
+  </section>
+
+  <section class="nav-buttons">
+    <a href="group.html" class="nav-btn">Home</a>
+    <a href="about.html" class="nav-btn">About</a>
+    <a href="menu.html" class="nav-btn">Menu</a>
+    <a href="contact.html" class="nav-btn">Contact</a>
+    <a href="gallery.html" class="nav-btn">Gallery</a>
+    <a href="review.html" class="nav-btn">Review</a>
+
+  </section>
+
+  <main>
+    <h2>About Us</h2>
+    <p>
+      Ayam Gempuk AG was founded with a passion for serving the crispiest, most flavorful fried chicken in town. 
+      Our secret recipe, handed down through generations, combines fresh herbs and spices to create a taste experience like no other.
+    </p>
+    <p>
+      From our humble beginnings as a small food stall, we have grown into a beloved brand that values quality, warmth, and authenticity. 
+      Every dish is prepared with care, using only the finest ingredients.
+    </p>
+    <p>
+      Whether you're dining in, ordering online, or visiting our food truck, we promise an unforgettable culinary experience with every bite. 
+      Welcome to the Ayam Gempuk family!
+    </p>
+  </main>
+
+  <section class="accordion-section">
+    <button class="accordion-btn" onclick="toggleContent('mission')">Mission</button>
+    <div id="mission" class="accordion-content">
+      <p>
+        To deliver the most delicious, crispy, and memorable ayam goreng experience, using fresh ingredients and authentic recipes that bring joy to every customer.
+      </p>
+    </div>
+
+    <button class="accordion-btn" onclick="toggleContent('vision')">Vision</button>
+    <div id="vision" class="accordion-content">
+      <p>
+        To become the top choice for fried chicken lovers across Malaysia and Southeast Asia, known for quality, consistency, and community care.
+      </p>
+    </div>
+
+    <button class="accordion-btn" onclick="toggleContent('cawangan')">Cawangan</button>
+    <div id="cawangan" class="accordion-content">
+      <ul>
+        <li>Kuala Lumpur - Jalan Ampang</li>
+        <li>Selangor - Shah Alam</li>
+        <li>Penang - Georgetown</li>
+        <li>Johor Bahru - City Square</li>
+        <li>Kelantan - Tanah Merah</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 IMAN. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function toggleContent(id) {
+      const content = document.getElementById(id);
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    }
+  </script>
+
+</body>
+
+</body>
+</html>
